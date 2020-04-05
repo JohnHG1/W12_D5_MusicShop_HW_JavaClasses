@@ -7,18 +7,12 @@ import Interfaces.IPlay;
 
 public class Guitar extends Instrument implements IPlay {
 
-    private int numOfStrings;
 
-    public Guitar(String manufacturer, String instrumentType, double retailPrice, double salePrice){
-        super(manufacturer, instrumentType, retailPrice, salePrice);
-        this.numOfStrings = numOfStrings;
+    public Guitar(String manufacturer, String instrumentType, double retailPrice, double salePrice, String family){
+        super(manufacturer, instrumentType, retailPrice, salePrice, family);
     }
 
 
-
-    protected int getNumOfStrings() {
-        return numOfStrings;
-    }
 
 
     public String play() {
