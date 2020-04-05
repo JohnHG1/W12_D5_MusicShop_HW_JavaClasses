@@ -1,7 +1,4 @@
-package Instruments;
-
-import Enums.*;
-import Instruments.Brass.Saxaphone;
+import instruments.Brass.Saxaphone;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +10,7 @@ public class SaxaphoneTest {
 
     @Before
     public void setUp() {
-        saxaphone = new Saxaphone("Sony", "Alto Saxaphone",  655.50, 730.00, "Brass");
+        saxaphone = new Saxaphone("Sony", "Alto Saxaphone",  655.50, 917.70, "Brass");
     }
 
     @Test
@@ -33,7 +30,7 @@ public class SaxaphoneTest {
 
     @Test
     public void getSalePrice(){
-        assertEquals(730.00, saxaphone.getSalePrice(), 0.001);
+        assertEquals(917.70, saxaphone.getSalePrice(), 0.001);
     }
 
     @Test

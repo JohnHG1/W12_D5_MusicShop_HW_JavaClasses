@@ -1,8 +1,7 @@
-package Instruments.Strings;
+package instruments.Strings;
 
-import Enums.*;
-import Instruments.Instrument;
-import Interfaces.IPlay;
+import instruments.Instrument;
+import interfaces.IPlay;
 
 
 public class Piano extends Instrument implements IPlay {
@@ -12,6 +11,9 @@ public class Piano extends Instrument implements IPlay {
         super(manufacturer, instrumentType, retailPrice, salePrice, instrumentFamily);
     }
 
+    public void calculateMarkup() {
+
+    }
 
     public String play() {
         return "ping ping ding";

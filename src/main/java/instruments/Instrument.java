@@ -1,7 +1,6 @@
-package Instruments;
+package instruments;
 
-import Interfaces.IPlay;
-import Enums.*;
+import interfaces.IPlay;
 
 public abstract class Instrument implements IPlay {
 
@@ -39,5 +38,5 @@ public abstract class Instrument implements IPlay {
         return instrumentFamily;
     }
 
-
+    public abstract void calculateMarkup();
 }

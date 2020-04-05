@@ -1,7 +1,4 @@
-package Instruments;
-
-import Enums.*;
-import Instruments.Strings.Guitar;
+import instruments.Strings.Guitar;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +10,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar("Yamaha", "Bass Guitar", 325.00, 587.25, "Strings");
+        guitar = new Guitar("Yamaha", "Bass Guitar", 325.00, 455.00, "Strings");
     }
 
     @Test
@@ -33,7 +30,7 @@ public class GuitarTest {
 
     @Test
     public void getSalePrice(){
-        assertEquals(587.25, guitar.getSalePrice(), 0.001);
+        assertEquals(455.00, guitar.getSalePrice(), 0.001);
     }
 
     @Test

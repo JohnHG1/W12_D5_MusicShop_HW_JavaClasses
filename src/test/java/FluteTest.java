@@ -1,7 +1,4 @@
-package Instruments;
-
-import Enums.*;
-import Instruments.Woodwind.Flute;
+import instruments.Woodwind.Flute;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +10,7 @@ public class FluteTest {
 
     @Before
     public void setUp() {
-        flute = new Flute("Jackobs", "Reed Flute", 45.50, 62.55, "Woodwind");
+        flute = new Flute("Jackobs", "Reed Flute", 45.30, 63.42, "Woodwind");
     }
 
     @Test
@@ -26,14 +23,16 @@ public class FluteTest {
         assertEquals("Reed Flute", flute.getInstrumentType());
     }
 
+
     @Test
     public void getRetailPrice(){
-        assertEquals(45.50, flute.getRetailPrice(), 0.001);
+        assertEquals(45.30, flute.getRetailPrice(), 0.001);
     }
+
 
     @Test
     public void getSalePrice(){
-        assertEquals(62.55, flute.getSalePrice(), 0.001);
+        assertEquals(63.42, flute.getSalePrice(), 0.001);
     }
 
     @Test
@@ -45,5 +44,12 @@ public class FluteTest {
     public void testCanPlay(){
         assertEquals("pii hii", flute.play());
     }
+
+//    @Test
+//    public void canCalculateMarkup() {
+//        flute.getRetailPrice() * 1.4;
+//        flute.getSalePrice();
+//        assertEquals(0.4, flute.calculateMarkup(), 0);
+//    }
 
 }

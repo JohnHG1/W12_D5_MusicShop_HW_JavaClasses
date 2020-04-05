@@ -1,15 +1,19 @@
-package Instruments.Brass;
+package instruments.Brass;
 
-import Enums.*;
-import Instruments.Instrument;
-import Interfaces.IPlay;
+import instruments.Instrument;
+import interfaces.IPlay;
 
 
-public class Saxaphone extends Instrument implements IPlay {
+public class Saxaphone extends Instrument {
 
 
     public Saxaphone(String manufacturer, String instrumentType, double retailPrice, double salePrice, String instrumentFamily){
         super(manufacturer, instrumentType, retailPrice, salePrice, instrumentFamily);
+    }
+
+
+    public void calculateMarkup() {
+
     }
 
 

@@ -1,8 +1,4 @@
-package Instruments;
-
-import Enums.*;
-import Instruments.Strings.Piano;
-import Instruments.Woodwind.Flute;
+import instruments.Strings.Piano;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +10,7 @@ public class PianoTest {
 
     @Before
     public void setUp() {
-        piano = new Piano("Steiner", "Baby Grand",  3565.19, 5550.00, "Strings");
+        piano = new Piano("Steiner", "Baby Grand",  3565.19, 4991.26, "Strings");
     }
 
     @Test
@@ -34,7 +30,7 @@ public class PianoTest {
 
     @Test
     public void getSalePrice(){
-        assertEquals(5550.00, piano.getSalePrice(), 0.001);
+        assertEquals(4991.26, piano.getSalePrice(), 0.001);
     }
 
     @Test

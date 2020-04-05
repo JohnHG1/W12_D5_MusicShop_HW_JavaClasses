@@ -1,8 +1,7 @@
-package Instruments.Strings;
+package instruments.Strings;
 
-import Enums.*;
-import Instruments.Instrument;
-import Interfaces.IPlay;
+import instruments.Instrument;
+import interfaces.IPlay;
 
 
 public class Guitar extends Instrument implements IPlay {
@@ -14,6 +13,9 @@ public class Guitar extends Instrument implements IPlay {
 
 
 
+    public void calculateMarkup() {
+
+    }
 
     public String play() {
         return "Da la ga ha";
