@@ -1,9 +1,12 @@
 import instruments.Strings.Guitar;
 import instruments.Woodwind.Flute;
 import instruments.Instrument;
+import interfaces.ISell;
 import org.junit.Before;
 import org.junit.Test;
 import trade.Shop;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -33,16 +36,16 @@ public class ShopTest {
 
     @Test
     public void canAddStockItemsToStock(){
-        shop1.canAddStockItemToStock(guitar1, flute1);
-        assertEquals(2, shop1.getStockItems().size());
-    }
-
-    @Test
-    public void canRemoveProductsFromStock() {
-        shop1.canAddStockItemToStock(guitar1, flute1);
-        shop1.canRemoveStockItemFromStock(guitar1);
+        shop1.canAddStockItemToStock(item, guitar1);
         assertEquals(1, shop1.getStockItems().size());
     }
+
+//    @Test
+//    public void canRemoveProductsFromStock() {
+//        shop1.canAddStockItemToStock(guitar1 flute1);
+//        shop1.canRemoveStockItemFromStock(guitar1);
+//        assertEquals(2, shop1.getStockItems().size());
+//    }
 
 
 }

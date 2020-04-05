@@ -29,11 +29,11 @@ public class Shop {
         }
     }
 
-    public void canRemoveStockItemFromStock(ISell stockItems){
-        for(ISell item : stockItems){
-            this.stockItems.remove(stockItem);
-        }
-    }
+//    public void canRemoveStockItemFromStock(ISell stockItems){
+//        for(ISell item : item){
+//            this.stockItems.remove(stockItems);
+//        }
+//    }
 
 //    public double calculateProfitFromSale(){
 //        double profitFromSale = 0;
