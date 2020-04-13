@@ -13,7 +13,15 @@ public class Guitar extends Instrument implements IPlay {
 
 
 
-    public void calculateMarkup() {
+    public double markUp() {
+        return this.getSalePrice() - this.getRetailPrice();
+    }
+
+    public void setRetailPrice(double retailPrice) {
+
+    }
+
+    public void setSalePrice(double salePrice) {
 
     }
 

@@ -24,26 +24,12 @@ public class Shop {
     }
 
     public void canAddStockItemToStock(ISell stockItem){
-        for(ISell item : stockItems){
             this.stockItems.add(stockItem);
-        }
     }
 
-//    public void canRemoveStockItemFromStock(ISell stockItems){
-//        for(ISell item : item){
-//            this.stockItems.remove(stockItems);
-//        }
-//    }
-
-//    public double calculateProfitFromSale(){
-//        double profitFromSale = 0;
-//        for(ISell item : stockItems){
-//            profitFromSale = (stockItems.getSalePrice - stockItems.getRetailPrice());
-//        }
-//        return profitFromSale;
-//    }
-
-
+    public void canRemoveStockItemFromStock(ISell stockItems){
+            this.stockItems.remove(stockItems);
+    }
 
 
 }

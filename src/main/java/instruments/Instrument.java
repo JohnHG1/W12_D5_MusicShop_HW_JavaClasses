@@ -1,8 +1,9 @@
 package instruments;
 
 import interfaces.IPlay;
+import interfaces.ISell;
 
-public abstract class Instrument implements IPlay {
+public abstract class Instrument implements IPlay, ISell {
 
     private String manufacturer;
     private String instrumentType;
@@ -12,7 +13,7 @@ public abstract class Instrument implements IPlay {
 
     public Instrument(String manufacturer, String instrumentType, double retailPrice, double salePrice, String instrumentFamily){
         this.manufacturer = manufacturer;
-        this. instrumentType = instrumentType;
+        this.instrumentType = instrumentType;
         this.retailPrice = retailPrice;
         this.salePrice = salePrice;
         this.instrumentFamily = instrumentFamily;
@@ -26,17 +27,29 @@ public abstract class Instrument implements IPlay {
         return instrumentType;
     }
 
+    public double calculateMarkup() {
+        return 0;
+    }
+
     public double getRetailPrice() {
         return retailPrice;
+    }
+
+    public void setRetailPrice(double retailPrice) {
+
     }
 
     public double getSalePrice() {
         return salePrice;
     }
 
+    public void setSalePrice(double salePrice) {
+
+    }
+
     public String getInstrumentFamily(){
         return instrumentFamily;
     }
 
-    public abstract void calculateMarkup();
+//    public abstract void calculateMarkup();
 }

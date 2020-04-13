@@ -23,12 +23,10 @@ public class FluteTest {
         assertEquals("Reed Flute", flute.getInstrumentType());
     }
 
-
     @Test
     public void getRetailPrice(){
         assertEquals(45.30, flute.getRetailPrice(), 0.001);
     }
-
 
     @Test
     public void getSalePrice(){
@@ -46,10 +44,10 @@ public class FluteTest {
     }
 
 //    @Test
-//    public void canCalculateMarkup() {
-//        flute.getRetailPrice() * 1.4;
-//        flute.getSalePrice();
-//        assertEquals(0.4, flute.calculateMarkup(), 0);
+//    public void getMarkUp(){
+//        assertEquals(12.75, flute.markUp());
 //    }
+
+
 
 }

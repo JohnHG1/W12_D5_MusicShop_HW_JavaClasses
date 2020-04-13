@@ -1,13 +1,14 @@
-package instruments.Strings;
+package instruments.Brass;
 
 import instruments.Instrument;
 import interfaces.IPlay;
 
 
-public class Piano extends Instrument implements IPlay {
+
+public class Saxophone extends Instrument {
 
 
-    public Piano(String manufacturer, String instrumentType, double retailPrice, double salePrice, String instrumentFamily){
+    public Saxophone(String manufacturer, String instrumentType, double retailPrice, double salePrice, String instrumentFamily){
         super(manufacturer, instrumentType, retailPrice, salePrice, instrumentFamily);
     }
 
@@ -23,10 +24,14 @@ public class Piano extends Instrument implements IPlay {
 
     }
 
+
     public String play() {
-        return "ping ping ding";
+        return "Zuu zuu duu duuuu ";
     }
+
 }
+
+
 
 
 
